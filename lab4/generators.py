@@ -23,7 +23,7 @@ def even_numbers_generator(N):
             
             yield i
 
-n = int(input("Enter the value of n: "))
+n = int(input("value of n: "))
 
 even_numbers = even_numbers_generator(n)
 
@@ -32,3 +32,7 @@ print("Even numbers between 0 and", n, ":", end=" ")
 for num in even_numbers:
     
     print(num, end=", ")
+    
+    
+    
+#3
