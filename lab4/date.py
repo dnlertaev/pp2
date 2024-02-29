@@ -68,4 +68,3 @@ x3 = x - x1
 sec = x3.total_seconds()
 
 print("Difference in seconds: ", sec)
-
