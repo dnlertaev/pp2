@@ -1,3 +1,5 @@
+# regex - обработка текста на основе шаблонов
+
 #1
 import re
 
@@ -25,7 +27,7 @@ for string in str:
         
         print(f"'{string}' does not match")
         
-
+ 
 
 #2
 import re

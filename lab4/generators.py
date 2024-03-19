@@ -1,3 +1,6 @@
+# yield - возвращает значение, сохраняя состояние функции, позволяя ей продолжить выполнение с места, где она была приостановлена
+
+#1
 def squares(n):
     
     for i in range(1, n + 1):
@@ -10,7 +13,7 @@ generator = squares(x)
 
 for sq in generator:
     
-    print(sq, end=" ")
+    print(sq, end=" ")[]
     
 
 
@@ -82,8 +85,8 @@ def countdown(n):
     
     while n >= 0:
         
-    
         yield n
+        
         n -= 1
 
 
