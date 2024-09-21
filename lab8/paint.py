@@ -1,13 +1,14 @@
 import pygame
 
+# Функция для запуска основного кода программы
 def main():
-    # Инициализация
+    # Инициализация Pygame
     pygame.init()
     
     # Создание экрана
     screen = pygame.display.set_mode((640, 480))
     
-    # Создание часов
+    # Создание объекта для отслеживания времени
     clock = pygame.time.Clock()
     
     # Начальные значения переменных
@@ -16,7 +17,6 @@ def main():
     points = []  # Список точек, по которым рисуется линия
     
     while True:
-        
         # Получение состояния клавиш
         pressed = pygame.key.get_pressed()
         
@@ -108,4 +108,5 @@ def drawLineBetween(screen, index, start, end, width, color_mode):
         y = int(aprogress * start[1] + progress * end[1])
         pygame.draw.circle(screen, color, (x, y), width)
 
+# Вызов основной функции
 main()
